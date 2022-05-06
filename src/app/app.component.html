@@ -1,0 +1,27 @@
+<!-- <hello name="{{ name }}"></hello>
+<p [ngClass]="displayVal ? 'display': ''">Start editing to see some magic happen :)</p>
+
+<h5 [ngStyle]="{'color': 'blue'}">H5 Tag</h5>
+<h6 class="colorBlue" [className]="display">H6 tag</h6> -->
+<a
+  [routerLink]="['home']"
+  [routerLinkActive]="['active']"
+  [routerLinkActiveOptions]="{ exact: true }"
+  >Home</a
+>
+<!-- <a [routerLink]="['home/active']" [routerLinkActive]="['active']">Home</a> -->
+
+<a [routerLink]="['test']" [state]="{ id: 2 }" routerLinkActive="active"
+  >Test</a
+>
+<a [routerLink]="['second']" routerLinkActive="active">Second comp</a>
+
+<a [routerLink]="['asd']" routerLinkActive="active">Error</a>
+
+<router-outlet></router-outlet>
+
+<div class="loader">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>

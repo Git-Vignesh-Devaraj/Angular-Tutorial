@@ -1,0 +1,48 @@
+p {
+  font-family: Lato;
+}
+
+.display {
+  color: red;
+}
+
+.colorBlue {
+  color: blue;
+}
+
+a {
+  padding: 10px;
+}
+
+.active {
+  background-color: yellowgreen;
+}
+
+.loader {
+  display: flex;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: brown;
+  border-radius: 50%;
+  animation: wavy 0.4s ease-in infinite alternate;
+}
+
+@keyframes wavy {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.dot:not(:last-child) {
+  margin-right: 10px;
+}
